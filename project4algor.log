@@ -1,0 +1,25 @@
+Tri ALGORITHME
+VAR
+    Onglet VAR: ARRAY_OF INTEGER
+    i, j, min_idx, n: INTEGER;
+    n: = tab.length;
+COMMENCER
+    PROCÉDURE swap (VAR xp, VAR yp: INTEGER)
+        VAR
+            tmp: INTEGER;
+        COMMENCER
+            tmp: = xp;
+            xp: = yp;
+            yp: = tmp;
+        FINIR
+    POUR i DE 0 À n-2 ÉTAPE 1 FAIRE
+        min_idx: = i;
+        POUR j DE 0 À ni-2 ÉTAPE 1 FAIRE
+            IF (tab [j]> tab [min_idx]) ALORS
+                min_idx: = j;
+            FIN SI
+        END_FOR
+    swap (onglet [min_idx], onglet [i])
+    END_FOR
+FINIR
+FINIR
